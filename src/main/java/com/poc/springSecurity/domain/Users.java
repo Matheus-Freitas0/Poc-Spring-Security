@@ -6,7 +6,7 @@ import org.springframework.data.annotation.Id;
 @Table(name = "USERS")
 public class Users {
     @Id
-    private Long username;
+    private String username;
     private String password;
 
     public String getPassword() {
@@ -17,11 +17,11 @@ public class Users {
         this.password = password;
     }
 
-    public Long getUsername() {
+    public String getUsername() {
         return username;
     }
 
-    public void setUsername(Long username) {
+    public void setUsername(String username) {
         this.username = username;
     }
 }
