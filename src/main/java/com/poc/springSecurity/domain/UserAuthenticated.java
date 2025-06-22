@@ -8,8 +8,12 @@ import java.util.Collection;
 import java.util.List;
 
 public class UserAuthenticated implements UserDetails {
-    @Autowired
-    private Users user;
+
+    private final Users user;
+
+    public UserAuthenticated(Users user) {
+        this.user = user;
+    }
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
