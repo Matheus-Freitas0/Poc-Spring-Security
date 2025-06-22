@@ -10,7 +10,7 @@ public class PrivateController {
 
     @GetMapping
     public String getPrivateMessage() {
-        return "This is a private message";
+        return "Mensagem privada recuperada com sucesso!";
     }
 
 }
